@@ -9,12 +9,43 @@ body {
 }
 
 .header {
+  display: flex;
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  align-items: center;
+  margin: 8px;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1;
+  margin: 16px;
+  padding: 0px;
+}
+
+.links > li {
+  justify-content: flex-start;
+  margin-right: auto;
+  margin-right: 8px;
+}
+
+.link-three {
+  flex: 1;
+}
+
+.notifications {
+  display: flex;
+  margin: 16px;
+  /* outline-style: dashed;
+  outline-color: #a9a9a9; */
 }
 
 .profile-image {
+  display: flex;
+  align-self: center;
+  margin: 16px;
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
   border-radius: 50%;
@@ -27,6 +58,9 @@ body {
   font-size: 32px;
   font-weight: 900;
   font-style: italic;
+  margin: 16px;
+  /* outline-style: dashed;
+  outline-color: #800080; */
 }
 
 button {
